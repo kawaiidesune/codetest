@@ -2,7 +2,12 @@
 
 require_once("./EquilibriumIndex.php");
 
-class EquilibriumIndex extends PHPUnit_Framework_TestCase
+/**
+ * I had to change the extends from PHPUnit_Framework_TestCase as it kept returning PHP errors
+ * when I tried to run this with phpunit EquilibriumIndexTest.php. Just thought I'd document
+ * that here in case you need to change it back. - VB
+ */
+class EquilibriumIndex extends \PHPUnit\Framework\TestCase
 {
 	public function testCase()
 	{
